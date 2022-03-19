@@ -1,0 +1,16 @@
+{
+  "name": "telegramchecker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "input": "^1.0.1",
+    "telegram": "^2.5.22"
+  }
+}
