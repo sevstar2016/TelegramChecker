@@ -3,3 +3,6 @@ chats.json
 delete.json
 users.json
 /session
+/.env
+history.json
+messages
