@@ -3,6 +3,10 @@ chats.json
 delete.json
 users.json
 /session
+<<<<<<< HEAD
 /.env
 history.json
 messages
+=======
+/.env
+>>>>>>> 32da60a (.env)
