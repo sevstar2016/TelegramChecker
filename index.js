@@ -1,14 +1,14 @@
 const { tlapi } = require('./tlapi')
 require('dotenv').config()
 
-const appId = process.env.appId;
+const appId = Number(process.env.appId)
 const hash = process.env.hash
 const tlApi = new tlapi(appId, hash)
 
 async function start() {
-    tlApi.load()
+    await tlApi.load()
+    await tlApi.logInit()
+    await tlApi.log()
 }
 
-start().then(() => {
-    console.log("DONE!")
-})
+start()

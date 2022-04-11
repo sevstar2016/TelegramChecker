@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "fs": "^0.0.1-security",
     "input": "^1.0.1",
     "telegram": "^2.5.22"

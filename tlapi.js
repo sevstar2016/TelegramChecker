@@ -27,8 +27,7 @@ class tlapi {
     }
 
     async load() {
-        await this.client.session.load()
-        this.client.connect()
+        await this.client.connect()
         console.log("connected.")
     }
 
@@ -69,6 +68,8 @@ class tlapi {
 
                 fs.readFile('./history.json', 'utf-8', async(err, data) => {
                     if (err) {
+                        console.log(err)
+                        fs.writeFileSync('./history.json', '')
                         return
                     }
                     try {
@@ -99,13 +100,13 @@ class tlapi {
                 })
 
 
-                diff = await client.invoke(new Api.updates.GetDifference({
-                    pts: lpts,
-                    date: result.date,
-                    qts: result.qts,
+                this.diff = await this.client.invoke(new Api.updates.GetDifference({
+                    pts: this.lpts,
+                    date: this.result.date,
+                    qts: this.result.qts,
                     ptsTotalLimit: 30
                 }))
-                lpts += 1
+                this.lpts += 1
                 console.log("Updated")
             }
         }

@@ -3,16 +3,6 @@ chats.json
 delete.json
 users.json
 /session
-<<<<<<< HEAD
-<<<<<<< HEAD
 /.env
 history.json
 messages
-=======
-/.env
->>>>>>> 32da60a (.env)
-=======
-/.env
-history.json
-messages
->>>>>>> 5e85e44 (.gitignore)
